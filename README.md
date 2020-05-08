@@ -1,23 +1,25 @@
 # Process Notes
-I downloaded the ZIP from GitHub, then reviewed the files and opened the Resources folder. I copied the README file into a blank doc to use as a checklist and a place to record my process as I work. I used Atom text editor to open the .html file and begin working through the task list in order, writing these notes as I go and checking my work periodically by loading the index.html file in Google Chrome. I had trouble with getting the header to be fixed but not overlap any other elements (various workarounds I tried are [documented here](#Fix-the-Header-Bar-to-never-overlap-over-the-other-elements). After completing the tasks, I committed the files to a new Github repository.
+I downloaded the ZIP from GitHub, then reviewed the files and opened the Resources folder. I copied the README file into a blank doc to use as a checklist and a place to record my process as I worked. In hindsight, I would have started this document in Github as a README to begin with, and done the Github markup as I went; I ended up copying the text out of my blank doc to this README and adding formatting at the end.
+
+I used Atom text editor to open the .html file and begin working through the task list in order, writing these notes as I went and checking my work periodically by loading the index.html file in Google Chrome. I had trouble with getting the header to be fixed but not overlap any other elements (various workarounds I tried are [documented here](#Fix-the-Header-Bar-to-never-overlap-over-the-other-elements). After completing the tasks, I committed the files to a new Github repository.
 
 ## Contents
 [HTML Tasks](#HTML-tasks)\
 [CSS Tasks](#CSS-tasks)\
-[Javascript Tasks](#Javascript-tasks)\
+[Javascript Tasks](#Javascript-tasks)
 
 
 ## HTML Tasks
 ### Reference the jellyfish file
 The jellyfish image is already referenced in the banner, but as a .png file. It is a .jpg file, so I change the reference to reflect that.
-1. Jellyfish file is a .jpg image: enter <img> tag.
+1. Jellyfish file is a .jpg image: enter `<img>` tag.
 2. Add the `src` attribute.
 3. Reference the path to the file: `<img src= “Resources/jellyfish.jpg”>.`
 ### Reference the main.js file
-1. In the header, enter script tags.
-2. Point to the main.js file by adding the src attribute to the opening tag and specifying the file name: `<script src= “main.js”></script>.`
+1. In the header, enter `<script>` tags.
+2. Point to the main.js file by adding the src attribute to the opening tag and specifying the file name: `<script src= “main.js”></script>`.
 ### Reference the styles.css file
-1. In the header, enter <link> tag.
+1. In the header, enter `<link>` tag.
 2. Specify the type of file with the `rel` attribute.
 3. Add `href= “”` to link to the file.
 4. In the href, specify the file path for styles.css: `<link rel=”stylesheet” href="styles.css">`
@@ -27,12 +29,12 @@ The jellyfish image is already referenced in the banner, but as a .png file. It 
 2. Paste the veeva.com URL between the quotation marks in the href to make the link active.
 
 ### Modify the Click Here button to open Veeva.com as a new tab
-1. In the <a> tag after the href attribute, add the target attribute.
+1. In the `<a>` tag after the href attribute, add the target attribute.
 2. Set the target attribute to `target= “_blank”` to open the link as a new tab.
 3. Save file and check work so far by opening the html file in Google Chrome and testing links.
 
 ### Separate the lorem ipsum content into two columns
-I made the text into two columns by styling them to each take 50% of the page, and then floating each column to the correct side of the page. I knew I could add the styling for each of these classes either internal, within <style> tags at the top of the document, or external, in the styles.css file. I chose external because it makes for slightly faster load time and reduces file size. It also makes the code tidier/easier to read for me.
+I made the text into two columns by styling them to each take 50% of the page, and then floating each column to the correct side of the page. I knew I could add the styling for each of these classes either internal, within `<style>` tags at the top of the document, or external, in the styles.css file. I chose external because it makes for slightly faster load time and reduces file size. It also makes the code tidier/easier to read for me.
   
 1. Separate the text at line 24 (4 paragraph tags in each column).
 2. Add a closing tag for the first div.
@@ -41,17 +43,17 @@ I made the text into two columns by styling them to each take 50% of the page, a
 5. In the new div tag, add `class= “right”`.
 
 ### Open styles.css.
-1. At the end of the style sheet, add classes for .left and .right.
+1. At the end of the style sheet, add classes for `.left` and `.right`.
 2. Use the width attribute to set the column width to 50% (half the page) for each div.
 3. Use the float property to place the left column on the left side of the page, and the right column on the right side of the page.
 4. Refresh the html file in Chrome to check work.
 
 ### Build a form
-1. Below the header div, enter the <form> tags.
+1. Below the header div, enter the `<form>` tags.
 2. Below the opening form tag, add a header for the form at h2 level (“Here’s the form!”).
 
 ### Add a checkbox
-1. Enter the <input> tag, then set attribute type to `checkbox`.
+1. Enter the `<input>` tag, then set attribute type to `checkbox`.
 2. To link the checkbox with its label, add the id attribute in the input tag. Set the id to `box1`. 
 3. So that a server could process and read the information in this form, add a name attribute in the input tag (`box1`), and then added a value attribute and set that to `1`.
 4. After the input tag, add the label tag and link it the input element by adding attribute `for` and setting it to `box1`. In between the opening and closing tags for the label, add the text that should appear next to the box (“Subscribe to newsletter”).
@@ -141,8 +143,8 @@ In `.header-bar` class, change `text-align` from center to left.
 2. Add `, sans-serif` to specify broader font family.
 3. In the head of the html, embed the Google fonts link to Roboto font to ensure Roboto shows up on most computers.
 ### Make the right column link to Veeva.com
-1. Before the right column div, enter an opening <a> href tag with a link to veeva.com. 
-2. Enter the closing </a> tag at the end of the div. The whole column now acts as a link.
+1. Before the right column div, enter an opening `<a>` href tag with a link to veeva.com. 
+2. Enter the closing `</a>` tag at the end of the div. The whole column now acts as a link.
 ### Change the background of the right column from white to gray when hovering
 1. Create pseudoclass `.right:hover`.
 2. Add background-color property and set it to `:grey`.
@@ -154,7 +156,7 @@ Under the form element in styles.css, add the background-color property and set 
 ### Give the form a border radius
 Under the form element in styles.css, add the border-radius property and set it to 40 px (for visibly rounded edges).
 ### Ensure that each input is on a separate line
-I check the form in my browser: I already used <div> and <br> to put each input on a separate line.
+I check the form in my browser: I already used `<div>` and `<br>` to put each input on a separate line.
 
 ### Set the submit button to take up the entire width of the form
 1. Add the input element to the styles.css sheet. 
@@ -163,22 +165,22 @@ I check the form in my browser: I already used <div> and <br> to put each input 
 
 ## Javascript Tasks
 ### Link the JQuery library
-1. Add <script> tags in the head of the document.
+1. Add `<script>` tags in the head of the document.
 2. Copy the most recent jQuery library link from Google Hosted Libraries.
-3. Paste the jQuery link in the opening script tag, prefaced by the src attribute and enclosed in quotes. 
+3. Paste the jQuery link in the opening script tag, prefaced by the `src` attribute and enclosed in quotes. 
 
 I could also download jQuery as a .js file to my computer and then reference it in the head, like how I referenced the main.js file. However, using this link to the library saves space on my computer and also may make the page load faster for users, who probably already have the jQuery library in their cache.
 
 ### Output some text in an alert whenever the site loads
-1. Add <script> tags in the head of the document.
+1. Add `<script>` tags in the head of the document.
 2. After the opening script tag, add `function`, then give the function a name ending in `Alert()` to use Java’s native alert function (I chose `loadAlert`).
 3. On the next line, specify the text to show in the alert by adding “alert,” followed by the text to show in parentheses and quotes. 
-4. Make the script execute when the page loads by specifying the event `onload` in the first <body> tag, and setting it to `showAlert()` on load. This way, the alert function that I put in the head will show up when the body has loaded. 
+4. Make the script execute when the page loads by specifying the event `onload` in the first `<body>` tag, and setting it to `showAlert()` on load. This way, the alert function that I put in the head will show up when the body has loaded. 
 
 ### Create an alert that displays the values of the form when selecting the submit button
-1. Add <script> tags in the head of the document.
+1. Add `<script>` tags in the head of the document.
 2. In the new script tags, add `function`, then give the function a name ending in `Alert()` to use Java’s native alert function (I chose `submitAlert` for this one).
-3. In the <input tag for the submit button, add an `onclick` event to make the alert load when the submit button is selected. Connect the onclick event to the function by specifying `onclick= “submitAlert()”`.
+3. In the `<input>` tag for the submit button, add an `onclick` event to make the alert load when the submit button is selected. Connect the onclick event to the function by specifying `onclick= “submitAlert()”`.
 4. Set up the variables to pull the values from each of the three elements in the form: Start by specifying `var =` for the id for the first input element to pull from. Add the statement `document.GetElementByID` and set it to the id of the element to pull from (`box1`), then pull the values values from that element by adding .value at the end of the statement.
 5. Copy/paste and fill in relevant ids for the remaining two elements.
 6. After the variables, add `alert ()` to create a space for text in the alert.
