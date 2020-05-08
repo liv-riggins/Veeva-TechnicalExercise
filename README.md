@@ -1,6 +1,12 @@
 # Veeva-TechnicalExercise
 ## Process Notes
-I downloaded the ZIP from GitHub, then reviewed the files and opened the Resources folder. I copied the README file into a blank doc to use as a checklist and a place to record my process as I work. I used Atom text editor to open the .html file and begin working through the task list in order, writing these notes as I go and checking my work periodically by loading the index.html file in Google Chrome. I had trouble with getting the header to be fixed but not overlap any other elements (various workarounds I tried are documented here). After completing the tasks, I committed the files to a new Github repository.
+I downloaded the ZIP from GitHub, then reviewed the files and opened the Resources folder. I copied the README file into a blank doc to use as a checklist and a place to record my process as I work. I used Atom text editor to open the .html file and begin working through the task list in order, writing these notes as I go and checking my work periodically by loading the index.html file in Google Chrome. I had trouble with getting the header to be fixed but not overlap any other elements (various workarounds I tried are [documented here](#Fix-the-Header-Bar-to-never-overlap-over-the-other-elements). After completing the tasks, I committed the files to a new Github repository.
+
+### Contents
+[HTML Tasks](#HTML-tasks)
+[CSS Tasks](#CSS-tasks)
+[Javascript Tasks](#Javascript-tasks)
+
 
 ### HTML Tasks
 #### Reference the jellyfish file
