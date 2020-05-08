@@ -1,9 +1,9 @@
 # Process Notes
 I downloaded the ZIP from GitHub, then reviewed the files and opened the Resources folder. I copied the README file into a blank doc to use as a checklist and a place to record my process as I worked.
 
-I used Atom text editor to open the .html file and begin working through the task list in order, writing these notes as I went and checking my work periodically by loading the index.html file in Google Chrome. I had trouble with getting the header to be fixed but not overlap any other elements (various workarounds I tried are [documented here](#Fix-the-Header-Bar-to-never-overlap-over-the-other-elements)). After completing the tasks, I committed the files to a new Github repository.
+I used Atom text editor to open the .html file and begin working through the task list in order, writing these notes as I went and checking my work periodically by loading the index.html file in Google Chrome. I had trouble with getting the header to be fixed but not overlap any other elements (various workarounds I tried are [documented here](#Fix-the-Header-Bar-to-never-overlap-over-the-other-elements)). After completing the tasks, I committed the files to a new GitHub repository.
 
-In hindsight, I would have started this document in Github as a ReadMe to begin with, and done the Github markup as I went; I ended up copying the text out of my blank doc to this ReadMe and adding formatting to the notes at the end of the process.
+In hindsight, I would have started this document in GitHub as a ReadMe to begin with, and done the GitHub markup as I went; I ended up copying the text out of my blank doc to this ReadMe and adding formatting to the notes at the end of the process.
 
 ## Contents
 [HTML Tasks](#HTML-tasks)\
